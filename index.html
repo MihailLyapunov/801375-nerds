@@ -3,10 +3,201 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/bem/source/normalize.css" rel="stylesheet">
+    <link href="css/bem/bem.css" rel="stylesheet">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="header">
+    	<a class="header__logo">
+        <img src="img/content/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+    	<nav class="main-navigation">
+        <ul class="main-menu">
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Студия</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Клиенты</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Магазин</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Корзина</a></li>
+        </ul>
+    	</nav>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+
+      <section class="carousel">
+        <h2 class="visually-hidden">Особенности работы студии</h2>
+        <div class="carousel__item">
+        	<div class="carousel__text-block">
+        		<h3>Долго, дорого, скрупулезно.</h3>
+	          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+	          <a href="#">Узнать больше</a>
+        	</div>
+          <div class="carousel__img-block">
+          	<img src="img/bg/slide1.png" width="698" height="413" alt="Слайд">
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__text-block">
+        		<h3>Любим математику как никто другой</h3>
+	          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+	          <a href="#">Узнать больше</a>
+        	</div>
+          <div class="carousel__img-block">
+          	<img src="img/bg/slide2.png" width="663" height="430" alt="Слайд">
+          </div>
+        </div>
+        <div class="carousel__item">
+        	<div class="carousel__text-block">
+        		<h3>Только ночь, только хардкор</h3>
+	          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+	          <a href="#">Узнать больше</a>
+        	</div>
+          <div class="carousel__img-block">
+          	<img src="img/bg/slide3.png" width="759" height="411" alt="Слайд">
+          </div>
+        </div>
+        <button class="carousel__control carousel__control_active" type="button">
+          <span class="visually-hidden">Первый слайд</span>
+        </button>
+        <button class="carousel__control" type="button">
+          <span class="visually-hidden">Второй слайд</span>
+        </button>
+        <button class="carousel__control" type="button">
+          <span class="visually-hidden">Третий слайд</span>
+        </button>
+      </section>
+
+      <section class="offers">
+        <h2 class="visually-hidden">Предложения</h2>
+        <ul class="offers__list">
+          <li class="offers__item">
+          	<p class="offers__img-wrapper"></p>
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="offers__link-red" href="#">Заказать</a>
+          </li>
+          <li class="offers__item">
+          	<p class="offers__img-wrapper"></p>
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="offers__link-green" href="#">Хочу шоколадки!</a>
+          </li>
+          <li class="offers__item">
+          	<p class="offers__img-wrapper"></p>
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="offers__link-yellow" href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="index-columns">
+        <section class="skills">
+          <h2 class="visually-hidden">Навыки</h2>
+          <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h4>Выполняем заказы на разработку:</h4>
+          <ul class="skills__list">
+          	<li class="skills__item">Веб-сайтов любой сложности</li>
+          	<li class="skills__item">Мобильных приложений для iOS и Android</li>
+          	<li class="skills__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="advantages__img-wrapper"></p>
+          <h3>с 2004 года Любим точность во всем:</h3>
+          <ul class="advantages__list">
+          	<li class="advantages__item"><span>146%</span> Уровень самоотдачи</li>
+          	<li class="advantages__item"><span>100%</span> Соблюдение сроков</li>
+          	<li class="advantages__item"><span>50%</span> Минимальная предоплата</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="projects">
+        <h2 class="visually-hidden">Проекты</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a class="projects__logo" href="https://htmlacademy.ru/intensive/htmlcss">
+			        <img src="img/content/logo-1.png" width="199" height="68" alt="Логотип Html Академия">
+			      </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__logo">
+			        <img src="img/content/logo-2.png" width="209" height="90" alt="Логотип Барбершоп Бородинский">
+			      </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__logo">
+			        <img src="img/content/logo-3.png" width="185" height="52" alt="Логотип Пинк">
+			      </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__logo">
+			        <img src="img/content/logo-4.png" width="173" height="84" alt="Логотип Мишка">
+			      </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="map-contacts__map-wrapper">
+          <img src="img/bg/map.png" width="1440" height="418" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img src="img/content/map-marker.png" width="231" height="190" alt="Маркер">
+        </p>
+        <div class="map-contacts__contacts contacts">
+        	<h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
+          <a class="contacts__link" href="feedback.html">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+      
+    <footer class="footer">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li><a class="social__link social__link_vk" href="#">Вконтакте</a></li>
+          <li><a class="social__link social__link_fb" href="#">Фейсбук</a></li>
+          <li><a class="social__link social__link_in" href="#">Инстаграм</a></li>  
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+
+    <section class="modal-feedback">
+      <h2>Напишите нам</h2>
+      <button class="modal-feedback__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      	<div class="feedback-form__row">
+	        <p class="feedback-form__item">
+	          <label for="feedback-form-input" class="visually-hidden">Ваше имя:</label>
+	          <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
+	        </p>
+	        <p class="feedback-form__item">
+	          <label for="feedback-form-email" class="visually-hidden">Ваш e-mail:</label>
+	          <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com">
+	        </p>
+        </div>
+        <p class="feedback-form__item">
+          <label for="feedback-form-text" class="visually-hidden">Текст письма</label>
+          <textarea id="feedback-form-text" type="text" name="text" placeholder="В свободной форме"></textarea> 
+        </p>
+        <button class="feedback-form__button" type="submit">Отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>
+
