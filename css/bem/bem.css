@@ -597,56 +597,22 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-
-html,
-body {
-  
-  min-height: 1750px;
+.header__container {
+	width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
 }
 
-body {
-  /* Временно для сетки */
-  background-image: url('../../img/bg/nerds-index.jpg');
-
-  background-repeat: no-repeat;
-}
-
-.header {
-  margin-bottom: 18px;
-
-  outline: 1px solid green;
-  /* Временно для сетки */
-  min-height: 114px;
-  background-color: transparent;
-}
-
-.main-navigation {
- /* Временно для сетки */
- outline: 2px solid red;
- min-height: 114px;
-}
-
-.header__logo {
-  width: 160px;
-  height: 65px;
-  outline: 1px solid blue;
-  /* Временно для сетки */
-  display: block;
+.header__cart {
+	margin-top: 9px;
 }
 
 .main-menu {
-  margin: 0;
-  padding: 0;
-  outline: 1px solid yellow;
-  list-style: none;
-  
-  /* Временно для сетки */
-  min-height: 114px;
-}
-
-.container {
-	display: flex;
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 10px;
+	margin: 0;
+    padding: 0;
+    margin-top: 9px;
+    display: flex;
 }
