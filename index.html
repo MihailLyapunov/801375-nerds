@@ -11,7 +11,7 @@
   <body>
 
     <header class="header">
-      <div class="header__container">
+      <div class="header__nav-container">
       	<a class="header__logo">
           <img src="img/content/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
         </a>
@@ -25,31 +25,27 @@
       	</nav>
         <a class="header__cart" href="#">Корзина</a>
       </div>
-    </header>
-
-    <main class="container">
-      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
       <section class="carousel">
         <h2 class="visually-hidden">Особенности работы студии</h2>
         <div class="carousel__item">
         	<div class="carousel__text-block">
         		<h3>Долго, дорого, скрупулезно.</h3>
-	          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+	          <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 	          <a href="#">Узнать больше</a>
         	</div>
-          <div class="carousel__img-block">
-          	<img src="img/bg/slide1.png" width="698" height="413" alt="Слайд">
+          <div class="carousel__img-block-1">
+          	
           </div>
         </div>
-        <div class="carousel__item">
+        <!--<div class="carousel__item">
           <div class="carousel__text-block">
         		<h3>Любим математику как никто другой</h3>
 	          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
 	          <a href="#">Узнать больше</a>
         	</div>
-          <div class="carousel__img-block">
-          	<img src="img/bg/slide2.png" width="663" height="430" alt="Слайд">
+          <div class="carousel__img-block-2">
+          	
           </div>
         </div>
         <div class="carousel__item">
@@ -58,41 +54,45 @@
 	          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 	          <a href="#">Узнать больше</a>
         	</div>
-          <div class="carousel__img-block">
-          	<img src="img/bg/slide3.png" width="759" height="411" alt="Слайд">
+          <div class="carousel__img-block-3">
+          	
           </div>
-        </div>
-        <button class="carousel__control carousel__control_active" type="button">
-          <span class="visually-hidden">Первый слайд</span>
+        </div>-->
+        <button class="carousel__control carousel__control_active visually-hidden" type="button">
+          <span class="">Первый слайд</span>
         </button>
-        <button class="carousel__control" type="button">
+        <button class="carousel__control visually-hidden" type="button">
           <span class="visually-hidden">Второй слайд</span>
         </button>
-        <button class="carousel__control" type="button">
+        <button class="carousel__control visually-hidden" type="button">
           <span class="visually-hidden">Третий слайд</span>
         </button>
       </section>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
       <section class="offers">
         <h2 class="visually-hidden">Предложения</h2>
         <ul class="offers__list">
           <li class="offers__item">
-          	<p class="offers__img-wrapper"></p>
+          	<p class="offers__img-wrapper offers__img-wrapper_1"></p>
             <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="offers__link-red" href="#">Заказать</a>
+            <p class="offers__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="offers__link offers__link_red" href="#">Заказать</a>
           </li>
           <li class="offers__item">
-          	<p class="offers__img-wrapper"></p>
+          	<p class="offers__img-wrapper offers__img-wrapper_2"></p>
             <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="offers__link-green" href="#">Хочу шоколадки!</a>
+            <p class="offers__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="offers__link offers__link_green" href="#">Заказать</a>
           </li>
           <li class="offers__item">
-          	<p class="offers__img-wrapper"></p>
+          	<p class="offers__img-wrapper offers__img-wrapper_3"></p>
             <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="offers__link-yellow" href="#">Хочу шоколадки!</a>
+            <p class="offers__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="offers__link offers__link_yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
