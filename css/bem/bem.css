@@ -41,11 +41,11 @@ input[type="radio"].visually-hidden {
 }
 
 .header__nav-container {
-	width: 1160px;
-  margin: 0 auto;
-  display: flex;
+	display: flex;
   justify-content: space-between;
   align-items: center;
+	width: 1160px;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -108,9 +108,9 @@ input[type="radio"].visually-hidden {
 }
 
 .carousel__text-block {
-	width: 378px;
 	display: flex;
   flex-direction: column;
+	width: 378px;	
 }
 
 .carousel__text-block h3 {
@@ -131,9 +131,9 @@ input[type="radio"].visually-hidden {
 }
 
 .carousel__text-block a {
+	width: 186px;
 	margin-top: 38px;   
 	padding: 18px 0px 16px 54px;
-	width: 186px;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 500;
@@ -186,9 +186,9 @@ input[type="radio"].visually-hidden {
 }
 
 .offers__list {
+	display: flex;
 	margin: 0;
 	padding: 0;
-	display: flex;
 	list-style: none;
 }
 
@@ -212,9 +212,9 @@ input[type="radio"].visually-hidden {
 }
 
 .offers__item {
-	margin-right: 100px;
 	display: flex;
 	flex-direction: column;
+	margin-right: 100px;
 }
 
 .offers__item:last-child {
@@ -240,8 +240,8 @@ input[type="radio"].visually-hidden {
 }
 
 .offers__link {
-	padding: 18px 39px 16px;
 	width: 84px;
+	padding: 18px 39px 16px;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 500;
@@ -294,7 +294,22 @@ input[type="radio"].visually-hidden {
 	background-color: #e5a722;
 }
 
+
+.index-columns {
+	display: flex;
+	width: 1160px;
+	margin: 80px auto 0;
+	padding-top: 39px;
+	border-top: 2px solid #eeeeee;
+}
+
+.skills {
+	margin-right: 149px;
+}
+
 .skills h3 {
+	margin: 0;
+	margin-top: 34px;
 	color: #000000;
 	font-size: 45px;
 	font-weight: 500;
@@ -302,30 +317,49 @@ input[type="radio"].visually-hidden {
 }
 
 .skills p {
+	margin: 0;
+	margin-top: 35px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 }
 
 .skills h4 {
+	margin: 0;
+	margin-top: 39px;
 	color: #000000;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
+	letter-spacing: 0.08px;
 	text-transform: uppercase;
 }
 
 .skills__list {
+	margin: 0;
+	padding-left: 36px;
 	list-style: none; 
 }
 
 .skills__item {
+	margin-top: 23px;
   font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 }
 
+.advantages__img-wrapper {
+	margin: 0;
+	width: 360px;
+	height: 208px;
+	background-image: url(../../img/bg/nerds-illustration.png);
+	background-repeat: no-repeat;
+}
+
 .advantages h3 {
+	margin: 0;
+  margin-top: 36px;
+  margin-left: 16px;
 	color: #000000;
 	font-size: 16px;
 	font-weight: 700;
@@ -333,39 +367,117 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-.advantages__list {
-	list-style: none;
+.advantages__table {
+	margin-top: 55px;
 }
 
-.advantages__item {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 18px;
+.advantages__table td:nth-child(2n) {
+	padding-left: 12px;
 }
 
-.advantages__item span {
+.advantages__table td:nth-child(3n) {
+	padding-left: 17px;
+}
+
+.advantages__row-top td {
 	color: #000000;
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 10.06px;
 }
 
-.projects__list {
+.advantages__row-top td::after {
+  content: "%";
+  position: relative;
+  bottom: 15px;
+  font-size: 27px;
+}
+
+.advantages__row-bottom td {
+	padding-top: 34px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.partners {
+	width: 1160px;
+	margin: 76px auto 0;
+	padding-top: 43px;
+	border-top: 2px solid #eeeeee;
+}
+
+.partners__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
-.projects__logo {
+.partners__item {
+	position: relative;
+}
+
+.partners__item:nth-child(1) {
+	margin-top: 16px;
+  margin-left: 31px;
+}
+
+.partners__item:nth-child(2) {
+	margin-left: 49px;
+  padding-left: 47px;
+}
+
+.partners__item:nth-child(2)::before {
+	content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  height: 52px;
+  border-left: 2px solid #eeeeee;
+}
+
+.partners__item:nth-child(3) {
+	margin-left: 44px;
+	margin-top: 19px;
+  padding-left: 59px;
+}
+
+.partners__item:nth-child(3)::before {
+	content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 52px;
+  border-left: 2px solid #eeeeee;
+}
+
+.partners__item:nth-child(4) {
+	margin-left: 56px;
+  padding-left: 65px;
+  margin-top: 6px;	
+}
+
+.partners__item:nth-child(4)::before {
+	content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 52px;
+  border-left: 2px solid #eeeeee;
+}
+
+.partners__logo {
 	cursor: pointer;
 	opacity: 0.2;
 }
 
-
-.projects__logo:hover,
-.projects__logo:focus {
+.partners__logo:hover,
+.partners__logo:focus {
 	opacity: 1;
 }
 
-.projects__logo:active {
+.partners__logo:active {
 	opacity: 0.1;
 }
 
