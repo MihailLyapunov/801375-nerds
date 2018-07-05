@@ -100,7 +100,7 @@ input[type="radio"].visually-hidden {
 
 .carousel {
 	width: 1160px;
-  margin: 9px auto 0;
+  margin: 11px auto 0;
 }
 
 .carousel__item {
@@ -182,7 +182,7 @@ input[type="radio"].visually-hidden {
 
 .offers {
 	width: 1160px;
-  margin: 80px auto 0;
+  	margin: 80px auto 0;
 }
 
 .offers__list {
@@ -496,8 +496,9 @@ input[type="radio"].visually-hidden {
 
 .map-contacts {
 	position: relative;
-	margin-top: 36px;
+	margin: 36px auto 0;
 	padding-top: 78px;
+	width: 1440px;
 	border-top: 2px solid #eeeeee;
 }
 
@@ -522,6 +523,7 @@ input[type="radio"].visually-hidden {
 .contacts {
 	position: absolute;
 	top: 133px;
+	left: 140px;
 	width: 219px;
 	padding: 50px 50px 47px;
 	background-color: #ffffff;
