@@ -181,24 +181,26 @@
     </footer>
 
     <section class="modal-feedback">
-      <h2>Напишите нам</h2>
-      <button class="modal-feedback__close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+      <div class="modal-feedback__row">
+        <h2>Напишите нам</h2>
+        <a class="modal-feedback__close" href="#">
+          <span class="visually-hidden">Закрыть</span>
+        </a>
+      </div>
       <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
       	<div class="feedback-form__row">
 	        <p class="feedback-form__item">
-	          <label for="feedback-form-input" class="visually-hidden">Ваше имя:</label>
-	          <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
+	          <label for="feedback-form-name">Ваше имя:</label>
+	          <input class="feedback-form__field" id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
 	        </p>
 	        <p class="feedback-form__item">
-	          <label for="feedback-form-email" class="visually-hidden">Ваш e-mail:</label>
-	          <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com">
+	          <label for="feedback-form-email">Ваш e-mail:</label>
+	          <input class="feedback-form__field" id="feedback-form-email" type="email" name="email" placeholder="email@example.com">
 	        </p>
         </div>
         <p class="feedback-form__item">
-          <label for="feedback-form-text" class="visually-hidden">Текст письма</label>
-          <textarea id="feedback-form-text" type="text" name="text" placeholder="В свободной форме"></textarea> 
+          <label for="feedback-form-text">Текст письма:</label>
+          <textarea class="feedback-form__field" id="feedback-form-text" type="text" name="text" placeholder="В свободной форме"></textarea> 
         </p>
         <button class="feedback-form__button" type="submit">Отправить</button>
       </form>
