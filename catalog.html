@@ -197,29 +197,25 @@
       </div>
 
       <section class="map-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="map-contacts__map-wrapper">
-          <img src="img/bg/map.png" width="1440" height="418" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <img src="img/content/map-marker.png" width="231" height="190" alt="Маркер">
-        </p>
-        <div class="map-contacts__contacts contacts">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
-          <a class="contacts__link" href="feedback.html">Напишите нам</a>
-        </div>
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="map-contacts__map-container">
+            <p class="map-contacts__map-wrapper"></p>
+            <div class="map-contacts__contacts contacts">
+              <h3>NЁRDS DESIGN STUDIO</h3>
+              <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
+              <a class="contacts__link" href="feedback.html">Напишите нам</a>
+            </div>
+          </p>  
       </section>
-
     </main>
 
     <footer class="footer">
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li><a class="social__link social__link_vk" href="#">Вконтакте</a></li>
-          <li><a class="social__link social__link_fb" href="#">Фейсбук</a></li>
-          <li><a class="social__link social__link_in" href="#">Инстаграм</a></li>  
-        </ul>
-      </div>
+      <ul class="footer__social-list social-list">
+        <li class="social-list__item"><a class="social-list__link social-list__link_vk" href="#">Вконтакте</a></li>
+        <li class="social-list__item"><a class="social-list__link social-list__link_fb" href="#">Фейсбук</a></li>
+        <li class="social-list__item"><a class="social-list__link social-list__link_in" href="#">Инстаграм</a></li>  
+      </ul>
       <div class="footer__info">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -227,24 +223,26 @@
     </footer>
     
     <section class="modal-feedback">
-      <h2>Напишите нам</h2>
-      <button class="modal-feedback__close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+      <div class="modal-feedback__row">
+        <h2>Напишите нам</h2>
+        <a class="modal-feedback__close" href="#">
+          <span class="visually-hidden">Закрыть</span>
+        </a>
+      </div>
       <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form__row">
           <p class="feedback-form__item">
-            <label for="feedback-form-input" class="visually-hidden">Ваше имя:</label>
-            <input id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="feedback-form-name">Ваше имя:</label>
+            <input class="feedback-form__field" id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="feedback-form__item">
-            <label for="feedback-form-email" class="visually-hidden">Ваш e-mail:</label>
-            <input id="feedback-form-email" type="email" name="email" placeholder="email@example.com">
+            <label for="feedback-form-email">Ваш e-mail:</label>
+            <input class="feedback-form__field" id="feedback-form-email" type="email" name="email" placeholder="email@example.com">
           </p>
         </div>
         <p class="feedback-form__item">
-          <label for="feedback-form-text" class="visually-hidden">Текст письма</label>
-          <textarea id="feedback-form-text" type="text" name="text" placeholder="В свободной форме"></textarea> 
+          <label for="feedback-form-text">Текст письма:</label>
+          <textarea class="feedback-form__field" id="feedback-form-text" type="text" name="text" placeholder="В свободной форме"></textarea> 
         </p>
         <button class="feedback-form__button" type="submit">Отправить</button>
       </form>
