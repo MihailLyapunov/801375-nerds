@@ -649,7 +649,7 @@ input[type="radio"].visually-hidden {
 .footer {
 	display: flex;
 	width: 1160px;
-	margin: 68px auto 0;
+	margin: 68px auto;
 }
 
 .social-list {
@@ -728,6 +728,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
+	display: none;
 	width: 770px;
 	margin: 50px auto;
 	padding: 66px 90px 84px 100px;
