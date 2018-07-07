@@ -74,23 +74,23 @@
               <ul class="filter__list">
                 <li class="filter__option">
                   <input class="filter__input visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
-                  <label for="filter-slider">Слайдер</label>
+                  <label for="filter-slider" tabindex="0">Слайдер</label>
                 </li>
                 <li class="filter__option">
                   <input class="filter__input visually-hidden" type="checkbox" name="advantages" id="filter-advantages">
-                  <label for="filter-advantages">Блок преимуществ</label>
+                  <label for="filter-advantages" tabindex="0">Блок преимуществ</label>
                 </li>
                 <li class="filter__option">
                   <input class="filter__input visually-hidden" type="checkbox" name="news" id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
+                  <label for="filter-news" tabindex="0">Новости</label>
                 </li>
                 <li class="filter__option">
                   <input class="filter__input visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
-                  <label for="filter-gallery">Галерея</label>
+                  <label for="filter-gallery" tabindex="0">Галерея</label>
                 </li>
                 <li class="filter__option">
                   <input class="filter__input visually-hidden" type="checkbox" name="cart" id="filter-cart">
-                  <label for="filter-cart">Корзина</label>
+                  <label for="filter-cart" tabindex="0">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -114,10 +114,10 @@
             </ul>
             <ul class="sort__list sort-order">
               <li class="sort-order__item">
-                <a class="sort__link sort-order__link-down" href="catalog.html"><span class="visually-hidden">По убыванию</span></a>
+                <a class="sort__link sort-order__link-down sort__link_active" href="catalog.html"><span class="visually-hidden">По убыванию</span></a>
               </li>
               <li class="sort-order__item">
-                <a class="sort__link sort-order__link-up sort__link_active" href="catalog.html"><span class="visually-hidden">По возрастанию</span></a> 
+                <a class="sort__link sort-order__link-up" href="catalog.html"><span class="visually-hidden">По возрастанию</span></a> 
               </li>
             </ul>
           </section>
@@ -127,20 +127,16 @@
             <ul class="products__list">
               <li class="products__item products-item">
                 <p class="products-item__head"></p>
-                <p class="products-item__image">
-                  <img src="img/catalog/sedona.jpg" width="360" height="576" alt="sedona">
-                </p>
+                <img src="img/catalog/sedona.jpg" width="360" height="572" alt="sedona">
                 <div class="products-item__buy">
                   <h3>Sedona</h3>
                   <p>Информационный сайт  для туристов</p>
                   <a class="products-item__button" href="#">9 900 руб.</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item products-item">
                 <p class="products-item__head"></p>
-                <p class="products-item__image">
-                  <img src="img/catalog/pink.jpg" width="360" height="576" alt="pink">
-                </p>
+                <img src="img/catalog/pink.jpg" width="360" height="576" alt="pink">
                 <div class="products-item__buy">
                   <h3>Pink App</h3>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -149,9 +145,7 @@
               </li>
               <li class="products__item products-item">
                 <p class="products-item__head"></p>
-                <p class="products-item__image">
-                  <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="barbershop">
-                </p>
+                <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="barbershop">
                 <div class="products-item__buy">
                   <h3>Barbershop</h3>
                   <p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -160,9 +154,7 @@
               </li>
               <li class="products__item products-item">
                 <p class="products-item__head"></p>
-                <p class="products-item__image">
-                  <img src="img/catalog/mishka.jpg" width="360" height="576" alt="mishka">
-                </p>
+                <img src="img/catalog/mishka.jpg" width="360" height="576" alt="mishka">
                 <div  class="products-item__buy">
                   <h3>Mishka</h3>
                   <p>Интернет-магазин вязаных игрушек</p>
@@ -171,9 +163,7 @@
               </li>
               <li class="products__item products-item">
                 <p class="products-item__head"></p>
-                <p class="products-item__image">
-                  <img src="img/catalog/aplus.jpg" width="360" height="576" alt="aplus">
-                </p>
+                <img src="img/catalog/aplus.jpg" width="360" height="576" alt="aplus">
                 <div class="products-item__buy">
                   <h3>A Plus</h3>
                   <p>Лендинг курсов повышения квалификации</p>
@@ -182,9 +172,7 @@
               </li>
               <li class="products__item products-item">
                 <p class="products-item__head"></p>
-                <p class="products-item__image">
-                  <img src="img/catalog/kvast.jpg" width="360" height="576" alt="kvast">
-                </p>
+                <img src="img/catalog/kvast.jpg" width="360" height="576" alt="kvast">
                 <div class="products-item__buy">
                   <h3>Кваст</h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
@@ -195,9 +183,9 @@
 
             <ul class="pagination">
               <li><a class="pagination__link pagination__link_active">1</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">Следующая</a></li>
+              <li><a class="pagination__link" href="#">2</a></li>
+              <li><a class="pagination__link" href="#">3</a></li>
+              <li><a class="pagination__link pagination__link_next" href="#">Следующая</a></li>
             </ul>
           </section>
         </div>
