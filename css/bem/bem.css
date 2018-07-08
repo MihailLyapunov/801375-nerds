@@ -1258,6 +1258,20 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.products-item__buy h3 {
+	margin: 0;
+	margin-top: 27px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.products-item__link {
+  color: #000000;
+}
+
 .products-item__buy p {
 	margin: 0;
 	margin-top: 15px;
