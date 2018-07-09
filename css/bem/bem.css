@@ -103,6 +103,7 @@ input[type="radio"].visually-hidden {
 
 .header__cart::before {
   content: "";
+  display: inherit;
   margin-right: 26px;
   margin-top: 7px;
   width: 15px;
@@ -147,7 +148,7 @@ input[type="radio"].visually-hidden {
 }
 
 .carousel__item-1 .carousel__text-block {
-  width: 378px;   
+  width: 379px;   
 }
 
 .carousel__item-2 .carousel__text-block {
@@ -278,6 +279,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin-right: 100px;
+  width: 300px;
 }
 
 .offers__item:last-child {
@@ -576,6 +578,7 @@ input[type="radio"].visually-hidden {
   width: 1440px;
   height: 418px;
   background-image: url(../../img/bg/map-1.png);
+  background-color: #f1efe8;
   background-repeat: no-repeat;
 }
 
@@ -1025,7 +1028,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 .filter__input:checked + label::after {
-  display: initial;
+  display: inherit;
 }
 
 .filter__input:disabled + label {
@@ -1170,7 +1173,7 @@ input[type="radio"].visually-hidden {
 
 .sort-type {
   margin-left: 240px;
-  width: 299px;
+  width: 305px;
 }
 
 .sort-type__item {
