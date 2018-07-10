@@ -38,6 +38,7 @@ input[type="radio"].visually-hidden {
 
 .header {
   padding-top: 49px;
+  min-width: 1160px;
   background-color: #eeeeee;
 }
 
@@ -565,27 +566,21 @@ input[type="radio"].visually-hidden {
 .map-contacts {
   position: relative;
   margin: 0 auto;
-  width: 1440px;
 }
 
 .map-contacts__map-container {
-  margin: 0;
+  min-height: 418px;
 }
 
 .map-contacts__map-wrapper {
 	position: absolute;
   margin: 0;
-  width: 1440px;
-  height: 418px;
+  width: 100%;
+  min-height: 418px;
   background-image: url(../../img/bg/map-1.png);
   background-color: #f1efe8;
   background-repeat: no-repeat;
-}
-
-.map-contacts__marker {
-  position: absolute;
-  top: 169px;
-  left: 820px;
+  background-size: cover;
 }
 
 .contacts {
@@ -1360,5 +1355,5 @@ input[type="radio"].visually-hidden {
 
 .ya-map {
 	width: 100%;
-	height: 418px;
+	min-height: 418px;
 }
