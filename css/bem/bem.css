@@ -252,6 +252,7 @@ input[type="radio"].visually-hidden {
 
 .offers__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -279,11 +280,12 @@ input[type="radio"].visually-hidden {
 .offers__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 80px;
   margin-right: 100px;
   width: 300px;
 }
 
-.offers__item:last-child {
+.offers__item:nth-child(3n) {
   margin-right: 60px;
 }
 
@@ -365,7 +367,7 @@ input[type="radio"].visually-hidden {
 .index-columns {
   display: flex;
   width: 1160px;
-  margin: 80px auto 0;
+  margin: 0 auto;
   padding-top: 39px;
   border-top: 2px solid #eeeeee;
 }
@@ -491,6 +493,7 @@ input[type="radio"].visually-hidden {
 
 .partners__list {
   display: flex;
+  
   margin: 0;
   padding: 0;
   list-style: none;
@@ -576,18 +579,22 @@ input[type="radio"].visually-hidden {
 	position: absolute;
   margin: 0;
   width: 100%;
-  min-height: 418px;
+  height: 100%;
   background-image: url(../../img/bg/map-1.png);
   background-color: #f1efe8;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.map-contacts__contacts-container {
+ 	margin: 0 auto; 
+ 	width: 1160px;
+}
+
 .contacts {
 	z-index: 1;
-  position: absolute;
+  position: relative;
   top: 57px;
-  left: 140px;
   width: 219px;
   padding: 50px 50px 47px;
   background-color: #ffffff;
@@ -654,6 +661,8 @@ input[type="radio"].visually-hidden {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 261px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -667,6 +676,10 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list__item:first-child {
+  margin-left: 0;
+}
+
+.social-list__item:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -728,12 +741,25 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-  display: none;
+	position: fixed;
+	left: 50%;
+	bottom: 180px;
+	z-index: 10;
+	
   width: 770px;
-  margin: 50px auto;
+  
   padding: 66px 90px 84px 100px;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
+
+	transform: translateX(-50%) translateY(-200%);
+	transition: all .5s ease;
+	opacity: 0;
+}
+
+.modal-visible {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0)
 }
 
 .modal-feedback__row {
@@ -1137,6 +1163,7 @@ input[type="radio"].visually-hidden {
 .sort__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1354,6 +1381,8 @@ input[type="radio"].visually-hidden {
 }
 
 .ya-map {
+	position: absolute;
 	width: 100%;
+	height: 100%;
 	min-height: 418px;
 }

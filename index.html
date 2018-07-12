@@ -5,8 +5,8 @@
     <title>HTML Academy: Нёрдс</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/bem/source/normalize.css" rel="stylesheet">
-    <link href="css/bem/bem.css" rel="stylesheet">
+    <link href="css/bem/source/normalize.min.css" rel="stylesheet">
+    <link href="css/bem/bem.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -147,13 +147,15 @@
 	        <h2 class="visually-hidden">Контакты</h2>
 	        <div class="map-contacts__map-container">
 	        	<p class="map-contacts__map-wrapper"></p>
-	          <div class="map-contacts__contacts contacts">
-		        	<h3>NЁRDS DESIGN STUDIO</h3>
-		          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-		          <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
-		          <a class="contacts__link" href="feedback.html">Напишите нам</a>
-		        </div>
-		        <div id="ya-map" class="ya-map"></div>
+	        	<div id="ya-map" class="ya-map"></div>
+	        	<div class="map-contacts__contacts-container">
+		          <div class="map-contacts__contacts contacts">
+			        	<h3>NЁRDS DESIGN STUDIO</h3>
+			          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			          <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
+			          <a class="contacts__link js-modal-target" href="javascript:()">Напишите нам</a>
+			        </div>
+		        </div>   
 	        </div>  
       </section>
     </main>
@@ -170,10 +172,10 @@
       </div>
     </footer>
 
-    <section class="modal-feedback">
+    <section class="modal-feedback js-modal">
       <div class="modal-feedback__row">
         <h2>Напишите нам</h2>
-        <a class="modal-feedback__close" href="#">
+        <a class="modal-feedback__close js-modal-close" href="javascript:()">
           <span class="visually-hidden">Закрыть</span>
         </a>
       </div>
@@ -197,7 +199,7 @@
     </section>
 
    	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
 
   </body>
 </html>
